@@ -14,6 +14,7 @@
 		84D0C37C2808E8B00041EF95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84D0C37B2808E8B00041EF95 /* Assets.xcassets */; };
 		84D0C37F2808E8B00041EF95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D0C37D2808E8B00041EF95 /* LaunchScreen.storyboard */; };
 		84D0C3822808E8B00041EF95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D0C3812808E8B00041EF95 /* main.m */; };
+		84D0C38D2809D64E0041EF95 /* HelloGCD.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D0C38C2809D64E0041EF95 /* HelloGCD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		84D0C37E2808E8B00041EF95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84D0C3802808E8B00041EF95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84D0C3812808E8B00041EF95 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84D0C38B2809D64E0041EF95 /* HelloGCD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloGCD.h; sourceTree = "<group>"; };
+		84D0C38C2809D64E0041EF95 /* HelloGCD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloGCD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,7 @@
 		84D0C36E2808E8AD0041EF95 /* gcd-demo-kirin */ = {
 			isa = PBXGroup;
 			children = (
+				84D0C38A2809D6180041EF95 /* GCDDemoInstance */,
 				84D0C36F2808E8AD0041EF95 /* AppDelegate.h */,
 				84D0C3702808E8AD0041EF95 /* AppDelegate.m */,
 				84D0C3722808E8AD0041EF95 /* SceneDelegate.h */,
@@ -74,6 +78,15 @@
 				84D0C3812808E8B00041EF95 /* main.m */,
 			);
 			path = "gcd-demo-kirin";
+			sourceTree = "<group>";
+		};
+		84D0C38A2809D6180041EF95 /* GCDDemoInstance */ = {
+			isa = PBXGroup;
+			children = (
+				84D0C38B2809D64E0041EF95 /* HelloGCD.h */,
+				84D0C38C2809D64E0041EF95 /* HelloGCD.m */,
+			);
+			path = GCDDemoInstance;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84D0C38D2809D64E0041EF95 /* HelloGCD.m in Sources */,
 				84D0C3772808E8AD0041EF95 /* ViewController.m in Sources */,
 				84D0C3712808E8AD0041EF95 /* AppDelegate.m in Sources */,
 				84D0C3822808E8B00041EF95 /* main.m in Sources */,

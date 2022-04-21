@@ -6,6 +6,7 @@
 //
 
 #import "AppDelegate.h"
+#import "HelloGCD.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +17,25 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    HelloGCD *GCDDemoInstance = [[HelloGCD alloc] init];
+    
+    //串行队列+同步
+    //[GCDDemoInstance syncOnSerialQueue];
+    //串行队列+异步
+    //[GCDDemoInstance asyncOnSerialQueue];
+    
+    //并发队列+同步
+    //[GCDDemoInstance syncOnConcurrentQueue];
+    //并发队列+异步
+    [GCDDemoInstance asyncOnConcurrentQueue];
+    //[NSThread sleepForTimeInterval:5];
+    //NSLog(@"--- Main thread wakes up and continue---");
+    //主队列+同步
+    //[GCDDemoInstance syncOnMainQueue];
+    //主队列+异步
+    //[GCDDemoInstance asyncOnMainQueue];
+    
+    
     return YES;
 }
 
